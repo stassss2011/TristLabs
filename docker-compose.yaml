@@ -5,13 +5,11 @@ services:
     restart: unless-stopped
     ports:
       - "80:8080"
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true"
 
   watchtower:
-    image: containrrr/watchtower:latest
+    image: nickfedor/watchtower:latest
     container_name: watchtower
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30 --cleanup --label-enable
+    command: --interval 30 --cleanup
