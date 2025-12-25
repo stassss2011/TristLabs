@@ -16,4 +16,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       # watchtower має бачити registry credentials
       - /home/ubuntu/.docker/config.json:/config.json:ro
-    command: --interval 30 --cleanup --label-enable --registry-auth
+    command: --interval 30 --cleanup --label-enable
