@@ -291,6 +291,10 @@ tramp
 .cask/
 dist/
 
+# but NOT inside wwwroot
+!**/wwwroot/**/dist/
+!**/wwwroot/**/dist/**
+
 # Flycheck
 flycheck_*.el
 
