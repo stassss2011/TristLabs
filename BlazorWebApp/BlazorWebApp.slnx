@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="compose.yaml" />
+  </Folder>
+  <Project Path="BlazorWebApp.Client/BlazorWebApp.Client.csproj" />
+  <Project Path="BlazorWebApp/BlazorWebApp.csproj" />
+</Solution>
